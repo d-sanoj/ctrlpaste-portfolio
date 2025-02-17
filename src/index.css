@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scale-on-scroll {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-on-scroll.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide-on-scroll {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-on-scroll.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-600 {
+  transition-delay: 600ms;
+}
